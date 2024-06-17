@@ -40,7 +40,7 @@ export const Header = () => {
 
 export const Submenu = () => {
     return (
-        <div className="lg:flex items-center justify-center gap-4 h-[9vh] border-b border-[#DDDBDC] px-12 bg-white hidden ">
+        <div className="lg:flex items-center justify-center gap-4 h-[9vh] border-b border-[#DDDBDC] px-12 bg-white hidden w-full ">
             <ul className="flex items-center gap-x-4 h-[9vh]">
                 <li className="font-normal text-xs flex items-center  border-b-2 border-transparent hover:border-b-2 hover:border-black h-full transition ease-in text-text  tracking-wide">
                     <Link href={""}>Holiday Gifting</Link>
@@ -112,9 +112,13 @@ const Navbar = () => {
             </div>
             <div />
             {nav && (
-                <div className="absolute top-[10vh] bg-white w-full p-3">
+                <div className="absolute top-[10vh] md:top-[4vh] bg-white w-full p-3">
                     <div className="flex flex-col gap-y-5">
-                        <button type="button" onClick={CloseNav} className="pt-5">
+                        <button
+                            type="button"
+                            onClick={CloseNav}
+                            className="pt-5"
+                        >
                             <IoIosClose className="text-text text-3xl" />
                         </button>
                         <ul className="flex flex-col gap-y-5">
@@ -134,8 +138,8 @@ const Navbar = () => {
                     </div>
                 </div>
             )}
-            
-            <div className="items-center justify-between gap-4 h-[9vh] border-b border-[#DDDBDC] px-12 bg-white hidden lg:flex">
+
+            <div className="items-center justify-between gap-4 h-[9vh] border-b border-[#DDDBDC] px-12 bg-white hidden lg:flex w-full">
                 <ul className="flex items-center gap-x-4 h-[9vh]">
                     <li className="font-normal text-xs flex items-center  border-b-2 border-transparent hover:border-b-2 hover:border-black h-full transition ease-in text-text tracking-wide">
                         <Link href={""}>Women</Link>
