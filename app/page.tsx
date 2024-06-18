@@ -115,7 +115,7 @@ export default function Home() {
     return (
         <main className="overflow-x-hidden scroll-smooth">
             <Navbar />
-            <section className="h-[80vh] bg-top bg-cover bg-bg-hero bg-no-repeat w-full lg:h-screen">
+            <section className="h-[80vh] bg-top bg-cover bg-hero bg-no-repeat w-full lg:h-screen">
                 <div className="flex flex-col gap-y-3.5 w-full top-[50%] items-center gap-3 text-white absolute md:top-[40%] lg:top-[55%] md:left-[4%]  z-20 md:w-[40%] ">
                     <h3 className="font-normal text-3xl md:text-4xl lg:text-5xl font-Inter">
                         Your Cozy Era

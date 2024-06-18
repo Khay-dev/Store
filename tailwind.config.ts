@@ -12,7 +12,7 @@ const config: Config = {
 				text: "#262626",
 			},
 			backgroundImage: {
-				"bg-hero": "url('/assets/HomeBgs.png')",
+				"hero": "url('/assets/HomeBgs.png')",
 				"new": "url('/assets/new.png')",
 				"holiday": "url('/assets/holiday.png')",
 				"best": "url('/assets/best.png')",
