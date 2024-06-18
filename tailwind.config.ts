@@ -16,6 +16,7 @@ const config: Config = {
 				"new": "url('/assets/new.png')",
 				"holiday": "url('/assets/holiday.png')",
 				"best": "url('/assets/best.png')",
+				"section":"url('/assets/bgsec.png')",
 			},
 		},
 	},
