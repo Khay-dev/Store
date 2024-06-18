@@ -111,12 +111,17 @@ export default function Home() {
             productImage: "/assets/outerwear.png",
             index: crypto.randomUUID(),
         },
+        {
+            productName: "Casuals",
+            productImage: "/assets/tees.png",
+            index: crypto.randomUUID(),
+        },
     ];
     return (
         <main className="overflow-x-hidden scroll-smooth">
             <Navbar />
             <section className="h-[80vh] bg-top bg-cover bg-hero bg-no-repeat w-full lg:h-screen">
-                <div className="flex flex-col gap-y-3.5 w-full top-[50%] items-center gap-3 text-white absolute md:top-[40%] lg:top-[55%] md:left-[4%]  z-20 md:w-[40%] ">
+                <div className="flex flex-col gap-y-3.5 w-full top-[50%] items-center gap-3 text-white absolute md:top-[40%] lg:top-[55%] lg:left-[4%]  z-20 lg:w-[40%] ">
                     <h3 className="font-normal text-3xl md:text-4xl lg:text-5xl font-Inter">
                         Your Cozy Era
                     </h3>
@@ -203,9 +208,9 @@ export default function Home() {
                 </div>
             </section>
             <section className=" lg:px-10 px-7 py-14">
-                <div className="text-center flex flex-col items-center gap-y-3 font-inter">
-                    <h1 className="text-xl font-normal lg:mb-2 text-text lg:text-2xl">
-                        Everlane Favourite
+                <div className="text-center flex flex-col items-center gap-y-4 font-inter">
+                    <h1 className="font-normal lg:mb-2 text-text text-2xl">
+                        Khay-Kart Favourite
                     </h1>
                     <p className=" font-normal text-sm  text-text lg:text-base">
                         Beautifully Functional. Purposefully Designed.
@@ -214,7 +219,7 @@ export default function Home() {
                 </div>
                 <Products />
             </section>
-            <section className=" lg:px-0 px-7 lg:py-14  pb-14 pt-5 flex items-center justify-between w-full lg:w-[80%] mx-auto lg:gap-x-10 flex-col md:flex-row ">
+            <section className=" lg:px-0 px-7 lg:py-14  pb-14 pt-5 flex items-center justify-between w-full lg:w-[80%] mx-auto lg:gap-x-10 flex-col lg:flex-row ">
                 <div className="flex flex-col items-start gap-y-4 w-11/12 mb-10 lg:mb-0">
                     <span className="font-normal font-inter text-base mb-3 text-black">
                         People Are Talking
@@ -226,7 +231,7 @@ export default function Home() {
                             width={78}
                             height={14}
                         />
-                        <h4 className="font-normal font-inter text-xl md:text-2xl mt-4 text-left">
+                        <h4 className="font-normal font-inter text-xl lg:text-2xl mt-4 text-left">
                             “Love this shirt! Fits perfectly and the fabric is
                             thick without being stiff.”
                         </h4>
@@ -248,7 +253,7 @@ export default function Home() {
                     />
                 </div>
             </section>
-            <section className="border-b-4 border-t-4 lg:px-0 px-7 lg:py-14 pb-14 pt-7 flex items-center justify-center  w-full lg:w-[85%] mx-auto gap-y-6 lg:gap-y-0 lg:gap-x-4 flex-col md:flex-row  ">
+            <section className="border-b-4 border-t-4 lg:px-0 px-7 lg:py-14 pb-14 pt-7 flex items-center justify-center  w-full lg:w-[85%] mx-auto gap-y-6 lg:gap-y-0 lg:gap-x-4 flex-col lg:flex-row  ">
                 <div>
                     <p className="text-center font-inter font-normal text-2xl m-5">
                         Our Holiday Gift Picks
@@ -258,6 +263,7 @@ export default function Home() {
                         alt={"Gift"}
                         width={505}
                         height={626}
+                        className="transition-grayscale duration-500 hover:grayscale"
                     />
                     <div className="flex flex-col justify-center items-center gap-y-2 mt-3">
                         <span className="font-normal font-inter text-center text-[#262626] text-sm">
@@ -273,13 +279,14 @@ export default function Home() {
                 </div>
                 <div>
                     <p className="text-center font-inter font-normal text-2xl m-5">
-                        Our Holiday Gift Picks
+                        Cleaner Fashion
                     </p>
                     <Image
                         src={"/assets/fashion.png"}
                         alt={"fashion"}
                         width={505}
                         height={626}
+                        className="transition-grayscale duration-500 hover:grayscale"
                     />
                     <div className="flex flex-col justify-center items-center gap-y-2 mt-3">
                         <span className="font-normal font-inter text-center text-[#262626] text-sm">
@@ -292,6 +299,68 @@ export default function Home() {
                         >
                             Learn More
                         </Link>
+                    </div>
+                </div>
+            </section>
+            <section className=" lg:px-10 px-7 py-14">
+                <div className="text-center flex flex-col items-center gap-y-3 font-inter">
+                    <h1 className="font-normal mb-3 text-text text-2xl">
+                        Why Choose Khay-Kart
+                    </h1>
+                    <p className=" font-normal text-sm  text-text lg:text-base">
+                        We are a one-stop platform for all your fashion needs,
+                        hassle-free. Buy with a peace of mind.
+                    </p>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 place-items-center mt-9">
+                    <div className="flex flex-col items-center gap-y-6">
+                        <Image
+                            src={"/assets/ship.svg"}
+                            alt={"shipping logo"}
+                            width={78}
+                            height={70}
+                        />
+                        <div className="flex flex-col gap-y-2">
+                            <p className="text-sm font-bold text-center">
+                                Complimentary Shipping
+                            </p>
+                            <p className="text-sm text-center">
+                                Enjoy free shipping on U.S. orders over $100.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="flex flex-col items-center gap-y-6">
+                        <Image
+                            src={"/assets/hang.svg"}
+                            alt={"shipping logo"}
+                            width={78}
+                            height={70}
+                        />
+                        <div className="flex flex-col gap-y-2">
+                            <p className="text-sm font-bold text-center">
+                                Consciously Crafted
+                            </p>
+                            <p className="text-sm text-center">
+                                Designed with you and the planet in mind.{" "}
+                            </p>
+                        </div>
+                    </div>
+                    <div className="flex flex-col items-center gap-y-6">
+                        <Image
+                            src={"/assets/locate.svg"}
+                            alt={"shipping logo"}
+                            width={78}
+                            height={70}
+                        />
+                        <div className="flex flex-col gap-y-2">
+                            <p className="text-sm font-bold text-center">
+                                Come Say Hi
+                            </p>
+                            <p className="text-sm text-center">
+                                We have 11 stores across the world
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>

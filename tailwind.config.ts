@@ -10,6 +10,7 @@ const config: Config = {
 		extend: {
 			colors: {
 				text: "#262626",
+				background: "#DDDBDC",
 			},
 			backgroundImage: {
 				"hero": "url('/assets/home.png')",

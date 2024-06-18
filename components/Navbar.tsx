@@ -38,9 +38,9 @@ const Header = () => {
     );
 };
 
- const Submenu = () => {
+const Submenu = () => {
     return (
-        <div className="lg:flex items-center justify-center gap-4 h-[9vh] border-b border-[#DDDBDC] px-12 bg-white hidden w-full ">
+        <div className="lg:flex items-center justify-center gap-4 h-[9vh] border-b border-[#DDDBDC] px-12 bg-background hidden w-full ">
             <ul className="flex items-center gap-x-4 h-[9vh]">
                 <li className="font-normal text-xs flex items-center  border-b-2 border-transparent hover:border-b-2 hover:border-black h-full transition ease-in text-text  tracking-wide">
                     <Link href={""}>Holiday Gifting</Link>
@@ -87,7 +87,7 @@ const Navbar = () => {
         <section className="w-screen font-inter">
             <Header />
 
-            <div className="flex items-center justify-between gap-4 h-[9vh] border-b border-[#DDDBDC] px-3 bg-white lg:hidden">
+            <div className="flex items-center justify-between gap-4 h-[9vh] border-b border-[#DDDBDC] px-3 bg-background lg:hidden">
                 <button type="button" onClick={ShowNav}>
                     <CiMenuBurger className="text-text text-xl" />
                 </button>
