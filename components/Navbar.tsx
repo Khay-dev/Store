@@ -12,7 +12,7 @@ import { CiMenuBurger } from "react-icons/ci";
 import { IoIosClose } from "react-icons/io";
 import { useState } from "react";
 
-export const Header = () => {
+const Header = () => {
     return (
         <div className="flex items-center justify-between flex-col text-center  gap-y-2 md:flex-row bg-black text-white h-auto px-8 py-2 w-full">
             <div />
@@ -38,7 +38,7 @@ export const Header = () => {
     );
 };
 
-export const Submenu = () => {
+ const Submenu = () => {
     return (
         <div className="lg:flex items-center justify-center gap-4 h-[9vh] border-b border-[#DDDBDC] px-12 bg-white hidden w-full ">
             <ul className="flex items-center gap-x-4 h-[9vh]">

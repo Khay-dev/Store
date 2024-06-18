@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
 
-export const Products = () => {
+ const Products = () => {
     const products = [
         {
             productName: "The Waffle Long-Sleeve Crew",
