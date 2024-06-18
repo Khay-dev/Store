@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
 
- const Products = () => {
+const Products = () => {
     const products = [
         {
             productName: "The Waffle Long-Sleeve Crew",
@@ -157,7 +157,7 @@ export default function Home() {
                     ))}
                 </div>
             </section>
-            <section className=" lg:px-10 px-7 py-14">
+            <section className=" lg:px-10 px-7 lg:py-14  pb-14 pt-5">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 place-items-center">
                     <div className=" bg-new bg-center bg-cover bg-no-repeat h-[500px] w-full flex flex-col gap-y-3.5 items-center justify-center">
                         <h1 className="font-normal text-2xl text-white">
@@ -213,6 +213,87 @@ export default function Home() {
                     </p>
                 </div>
                 <Products />
+            </section>
+            <section className=" lg:px-0 px-7 lg:py-14  pb-14 pt-5 flex items-center justify-between w-full lg:w-[80%] mx-auto lg:gap-x-10 flex-col md:flex-row ">
+                <div className="flex flex-col items-start gap-y-4 w-11/12 mb-10 lg:mb-0">
+                    <span className="font-normal font-inter text-base mb-3 text-black">
+                        People Are Talking
+                    </span>
+                    <div className="lg:w-[401px] w-full">
+                        <Image
+                            src="/assets/star.svg"
+                            alt="stars"
+                            width={78}
+                            height={14}
+                        />
+                        <h4 className="font-normal font-inter text-xl md:text-2xl mt-4 text-left">
+                            “Love this shirt! Fits perfectly and the fabric is
+                            thick without being stiff.”
+                        </h4>
+                    </div>
+
+                    <p className="font-normal text-sm font-inter mt-3">
+                        <span>-- JonSnSF,</span>{" "}
+                        <span className="underline tracking-wide">
+                            The Heavyweight Overshirt
+                        </span>
+                    </p>
+                </div>
+                <div className=" flex items-center justify-center lg:w-full">
+                    <Image
+                        src={"/assets/review.png"}
+                        alt={"model"}
+                        width={530}
+                        height={695}
+                    />
+                </div>
+            </section>
+            <section className="border-b-4 border-t-4 lg:px-0 px-7 lg:py-14 pb-14 pt-7 flex items-center justify-center  w-full lg:w-[85%] mx-auto gap-y-6 lg:gap-y-0 lg:gap-x-4 flex-col md:flex-row  ">
+                <div>
+                    <p className="text-center font-inter font-normal text-2xl m-5">
+                        Our Holiday Gift Picks
+                    </p>
+                    <Image
+                        src={"/assets/gift.png"}
+                        alt={"Gift"}
+                        width={505}
+                        height={626}
+                    />
+                    <div className="flex flex-col justify-center items-center gap-y-2 mt-3">
+                        <span className="font-normal font-inter text-center text-[#262626] text-sm">
+                            The best presents for everyone on your list.
+                        </span>
+                        <Link
+                            href=""
+                            className="underline text-sm font-inter font-normal mt-3"
+                        >
+                            Read More
+                        </Link>
+                    </div>
+                </div>
+                <div>
+                    <p className="text-center font-inter font-normal text-2xl m-5">
+                        Our Holiday Gift Picks
+                    </p>
+                    <Image
+                        src={"/assets/fashion.png"}
+                        alt={"fashion"}
+                        width={505}
+                        height={626}
+                    />
+                    <div className="flex flex-col justify-center items-center gap-y-2 mt-3">
+                        <span className="font-normal font-inter text-center text-[#262626] text-sm">
+                            See the sustainability efforts behind each of our
+                            products.
+                        </span>
+                        <Link
+                            href=""
+                            className="underline text-sm font-inter font-normal mt-3"
+                        >
+                            Learn More
+                        </Link>
+                    </div>
+                </div>
             </section>
         </main>
     );
