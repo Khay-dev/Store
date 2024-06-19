@@ -1,5 +1,4 @@
 import Link from "next/link";
-import React from "react";
 import { HiMiniArrowRight } from "react-icons/hi2";
 
 const Footer = () => {

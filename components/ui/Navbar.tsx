@@ -100,9 +100,9 @@ const Navbar = () => {
                 </button>
 
                 <div className="ml-[9vw]">
-                    <p className=" font-bold font-inter text-sm -tracking-widest text-text ">
+                    <Link href="/" className=" font-bold font-inter text-sm -tracking-widest text-text ">
                         K H A Y - C A R T
-                    </p>
+                    </Link>
                 </div>
 
                 <div className="flex items-center gap-x-2">
@@ -136,7 +136,7 @@ const Navbar = () => {
                                 <Link href={""}>Men</Link>
                             </li>
                             <li className="hover:underline text-text tracking-wide h-full font-medium text-sm flex items-center transition ease-in">
-                                <Link href={""}>About</Link>
+                                <Link href="/about">About</Link>
                             </li>
                             <li className="hover:underline text-text tracking-wide h-full font-medium text-sm flex items-center transition ease-in">
                                 <Link href={""}>Everworld Stories</Link>

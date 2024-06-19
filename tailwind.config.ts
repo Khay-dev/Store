@@ -14,6 +14,7 @@ const config: Config = {
 			},
 			backgroundImage: {
 				"hero": "url('/assets/home.png')",
+				"about": "url('/assets/about.png')",
 				"new": "url('/assets/new.png')",
 				"holiday": "url('/assets/holiday.png')",
 				"best": "url('/assets/best.png')",
