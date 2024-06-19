@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import Navbar from "../../components/ui/Navbar";
 const About = () => {
@@ -6,11 +5,11 @@ const About = () => {
         <main className="overflow-x-hidden scroll-smooth">
             <Navbar />
             <section className="h-[80vh] bg-bottom bg-cover bg-about bg-no-repeat w-full lg:h-screen ">
-                <div className="flex flex-col gap-y-3.5 w-[90%] top-[50%] left-[6%] items-center gap-3 text-white absolute md:top-[40%] lg:top-[60%] md:left-[25%] lg:left-[30%]  z-20 lg:w-[40%]  md:w-[50%]">
-                    <h3 className="font-normal text-3xl md:text-4xl lg:text-5xl font-Inter text-center">
+                <div className="flex flex-col gap-y-5 items-center justify-center h-full text-center">
+                    <h3 className="font-normal text-5xl  lg:text-7xl font-Inter text-center text-white lg:leading-[1.12] md:leading-[1.25] lg:w-[30%] md:w-[50%]">
                         We believe we can all make a difference.
                     </h3>
-                    <p className="font-normal text-lg md:text-2xl text-center">
+                    <p className="font-normal text-xl md:text-2xl text-center text-white  lg:w-[40%] md:w-[60%]">
                         Our way: Exceptional quality. Ethical factories. Radical
                         Transparency.
                     </p>
@@ -23,7 +22,7 @@ const About = () => {
                     best, ethical factories around the world. Source only the
                     finest materials. And share those stories with you down to
                     the true cost of every product we make. It’s a new way of
-                    doing things. <br /> We call it Radical Transparency.
+                    doing things. We call it Radical Transparency.
                 </p>
             </section>
             <section className=" w-full h-fit flex flex-col md:flex-row lg:flex-row">

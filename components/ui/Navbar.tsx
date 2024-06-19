@@ -100,7 +100,10 @@ const Navbar = () => {
                 </button>
 
                 <div className="ml-[9vw]">
-                    <Link href="/" className=" font-bold font-inter text-sm -tracking-widest text-text ">
+                    <Link
+                        href={"/"}
+                        className=" font-bold font-inter text-sm tracking-widest text-text "
+                    >
                         K H A Y - C A R T
                     </Link>
                 </div>
@@ -136,7 +139,7 @@ const Navbar = () => {
                                 <Link href={""}>Men</Link>
                             </li>
                             <li className="hover:underline text-text tracking-wide h-full font-medium text-sm flex items-center transition ease-in">
-                                <Link href="/about">About</Link>
+                                <Link href={"/about"}>About</Link>
                             </li>
                             <li className="hover:underline text-text tracking-wide h-full font-medium text-sm flex items-center transition ease-in">
                                 <Link href={""}>Everworld Stories</Link>
@@ -155,7 +158,7 @@ const Navbar = () => {
                         <Link href={""}>Men</Link>
                     </li>
                     <li className="font-normal text-xs flex items-center border-b-2 border-transparent hover:border-b-2 hover:border-black h-full transition ease-in  text-text tracking-wide">
-                        <Link href={""}>About</Link>
+                        <Link href="/about">About</Link>
                     </li>
                     <li className="font-normal text-xs flex items-center border-b-2 border-transparent hover:border-b-2 hover:border-black h-full transition ease-in text-text tracking-wide">
                         <Link href={""}>Everworld Stories</Link>
@@ -163,9 +166,12 @@ const Navbar = () => {
                 </ul>
 
                 <div className="ml-[-16vw]">
-                    <p className=" font-bold font-inter text-sm -tracking-widest text-text ">
+                    <Link
+                        href="/"
+                        className=" font-bold font-inter text-sm -tracking-widest text-text "
+                    >
                         K H A Y - C A R T
-                    </p>
+                    </Link>
                 </div>
 
                 <div className="flex items-center gap-x-4">
