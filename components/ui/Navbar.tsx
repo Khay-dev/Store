@@ -2,9 +2,6 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import flag from "../public/assets/us 1.svg";
-import arrow from "../public/assets/ArrowRight.svg";
-
 import { IoSearchSharp } from "react-icons/io5";
 import { LuUser2 } from "react-icons/lu";
 import { IoCartOutline } from "react-icons/io5";
@@ -26,12 +23,22 @@ const Header = () => {
                         <span className="font-inter font-normal underline  ">
                             Sign Up For Texts
                         </span>
-                        <Image src={arrow} alt="arrow" width={10} height={20} />
+                        <Image
+                            src="/assets/ArrowRight.svg"
+                            alt="arrow"
+                            width={10}
+                            height={20}
+                        />
                     </Link>
                 </p>
             </div>
             <div className="flex items-center gap-x-3">
-                <Image src={flag} alt="US-flag" width={25} height={15} />
+                <Image
+                    src="/assets/us.svg"
+                    alt="US-flag"
+                    width={25}
+                    height={15}
+                />
                 <p className="text-xs font-normal tracking-wider">USD</p>
             </div>
         </div>

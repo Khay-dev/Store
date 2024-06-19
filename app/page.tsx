@@ -1,4 +1,5 @@
-import Navbar from "../components/Navbar";
+import Navbar from "../components/ui/Navbar";
+import Footer from "../components/ui/Footer";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -364,6 +365,7 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+            <Footer />
         </main>
     );
 }
