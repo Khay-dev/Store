@@ -1,12 +1,13 @@
 import Image from "next/image";
-import Navbar from "../../components/ui/Navbar";
+import Navbar from "@/components/ui/Navbar";
+import Footer from "@/components/ui/Footer";
 const About = () => {
     return (
         <main className="overflow-x-hidden scroll-smooth">
             <Navbar />
             <section className="h-[80vh] bg-bottom bg-cover bg-about bg-no-repeat w-full lg:h-screen ">
                 <div className="flex flex-col gap-y-5 items-center justify-center h-full text-center">
-                    <h3 className="font-normal text-5xl  lg:text-7xl font-Inter text-center text-white lg:leading-[1.12] md:leading-[1.25] lg:w-[30%] md:w-[50%]">
+                    <h3 className="font-normal text-4xl  lg:text-7xl font-Inter text-center text-white lg:leading-[1.12] md:leading-[1.25] lg:w-[30%] md:w-[50%]">
                         We believe we can all make a difference.
                     </h3>
                     <p className="font-normal text-xl md:text-2xl text-center text-white  lg:w-[40%] md:w-[60%]">
@@ -52,8 +53,58 @@ const About = () => {
                     </p>
                 </div>
             </section>
-            {/* <section className="bg-about h-[60vh] bg-top bg-cover  bg-no-repeat w-full " />
-            <section>yooooo</section> */}
+            <section className=" w-full h-fit flex flex-col-reverse md:flex-row lg:flex-row">
+                <div className="bg-[#e6ded8] w-full lg:w-[50%] mx-auto flex flex-col md:p-8 py-7 px-7 lg:p-20 items-start justify-center h-[350px] lg:h-auto md:h-[40vh]">
+                    <span className="font-normal font-inter text-xs">
+                        OUR QUALITY
+                    </span>
+                    <h1 className="font-normal font-inter text-3xl md:text-3xl lg:text-4xl">
+                        Designed to last.
+                    </h1>
+                    <p className="mt-5 font-normal font-inter text-sm">
+                        At Everlane, we’re not big on trends. We want you to
+                        wear our pieces for years, even decades, to come. That’s
+                        why we source the finest materials and factories for our
+                        timeless products— like our Grade-A cashmere sweaters,
+                        Italian shoes, and Peruvian Pima tees.
+                    </p>
+                </div>
+                <div className="w-full lg:w-2/4 mx-auto lg:h-auto md:h-[40vh]">
+                    <Image
+                        src={"/assets/quality.png"}
+                        alt={"tailor"}
+                        width={700}
+                        height={733}
+                    />
+                </div>
+            </section>
+            <section className=" bg-sectionbg bg-center bg-cover bg-no-repeat h-[400px] lg:h-[70vh] w-full" />
+            <section className=" w-full h-fit flex flex-col-reverse md:flex-row lg:flex-row">
+                <div className="w-full lg:w-2/4 mx-auto lg:h-auto md:h-[40vh]">
+                    <Image
+                        src={"/assets/prices.png"}
+                        alt={"tailor"}
+                        width={700}
+                        height={733}
+                    />
+                </div>
+                <div className="w-full lg:w-[50%] mx-auto flex flex-col md:p-8 py-7 px-7 lg:p-20 items-start justify-center h-[350px] lg:h-auto md:h-[40vh]">
+                    <span className="font-normal font-inter text-xs">
+                        OUR PRICES
+                    </span>
+                    <h1 className="font-normal font-inter text-3xl md:text-3xl lg:text-4xl">
+                        Radically Transparent.{" "}
+                    </h1>
+                    <p className="mt-5 font-normal font-inter text-sm">
+                        We believe our customers have a right to know how much
+                        their clothes cost to make. We reveal the true costs
+                        behind all of our products—from materials to labor to
+                        transportation—then offer them to you, minus the
+                        traditional retail markup.
+                    </p>
+                </div>
+            </section>
+            <Footer />
         </main>
     );
 };

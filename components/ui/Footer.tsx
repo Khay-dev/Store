@@ -136,7 +136,7 @@ const Footer = () => {
                             className="w-[388px] h-[53px] pl-8 text-sm tracking-wider"
                         />
                         <span className="text-xs font-thin w-[52px] h-[53px] bg-text text-white flex items-center justify-center">
-                            <HiMiniArrowRight className="text-2xl font-thin " />
+                            <HiMiniArrowRight className="text-lg font-thin " />
                         </span>
                     </form>
                 </div>
