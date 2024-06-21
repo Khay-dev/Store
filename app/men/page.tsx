@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import Navbar from "../../components/ui/Navbar";
 import Footer from "../../components/ui/Footer";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
@@ -192,63 +192,63 @@ const SideBar = () => {
 const MainBar = () => {
     const menClothes: menClothes[] = [
         {
-            index: crypto.randomUUID(),
+            index: "men1",
             menImage: "/assets/men1.png",
             menColor: "Black",
             menBrand: "The Waffle Long-Sleeve Crew",
             menPrice: "132",
         },
         {
-            index: crypto.randomUUID(),
+            index: "men2",
             menImage: "/assets/men2.png",
             menColor: "Black",
             menBrand: "The Waffle Long-Sleeve Crew",
             menPrice: "132",
         },
         {
-            index: crypto.randomUUID(),
+            index: "men3",
             menImage: "/assets/men3.png",
             menColor: "Black",
             menBrand: "The Waffle Long-Sleeve Crew",
             menPrice: "132",
         },
         {
-            index: crypto.randomUUID(),
+            index: "men4",
             menImage: "/assets/men4.png",
             menColor: "Black",
             menBrand: "The Waffle Long-Sleeve Crew",
             menPrice: "132",
         },
         {
-            index: crypto.randomUUID(),
+            index: "men5",
             menImage: "/assets/men5.png",
             menColor: "Black",
             menBrand: "The Waffle Long-Sleeve Crew",
             menPrice: "132",
         },
         {
-            index: crypto.randomUUID(),
+            index: "men6",
             menImage: "/assets/men6.png",
             menColor: "Black",
             menBrand: "The Waffle Long-Sleeve Crew",
             menPrice: "132",
         },
         {
-            index: crypto.randomUUID(),
+            index: "men7",
             menImage: "/assets/men7.png",
             menColor: "Black",
             menBrand: "The Waffle Long-Sleeve Crew",
             menPrice: "132",
         },
         {
-            index: crypto.randomUUID(),
+            index: "men8",
             menImage: "/assets/men8.png",
             menColor: "Black",
             menBrand: "The Waffle Long-Sleeve Crew",
             menPrice: "132",
         },
         {
-            index: crypto.randomUUID(),
+            index: "men9",
             menImage: "/assets/men9.png",
             menColor: "Black",
             menBrand: "The Waffle Long-Sleeve Crew",
