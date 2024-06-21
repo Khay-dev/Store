@@ -36,25 +36,25 @@ const SideBar = () => {
             value: "36",
         },
         {
-            value: "36",
+            value: "38",
         },
         {
-            value: "36",
+            value: "40",
         },
         {
-            value: "36",
+            value: "42",
         },
         {
-            value: "36",
+            value: "44",
         },
         {
-            value: "36",
+            value: "46",
         },
         {
-            value: "36",
+            value: "48",
         },
         {
-            value: "36",
+            value: "50",
         },
     ];
 
@@ -108,7 +108,7 @@ const SideBar = () => {
                             {waistSizes.map((waistSize, index) => (
                                 <button
                                     key={index}
-                                    className="bg-[#F5F4F4] p-3 font-inter font-normal text-xs"
+                                    className="bg-[#F5F4F4] p-3 font-inter font-normal text-xs hover:bg-text hover:text-white"
                                 >
                                     {waistSize.value}
                                 </button>
@@ -123,7 +123,7 @@ const SideBar = () => {
                             {ClothesSizes.map((clotheSize, index) => (
                                 <button
                                     key={index}
-                                    className="bg-[#F5F4F4] p-3 font-inter font-normal text-xs"
+                                    className="bg-[#F5F4F4] p-3 font-inter font-normal text-xs  hover:bg-text hover:text-white"
                                 >
                                     {clotheSize.value}
                                 </button>
