@@ -35,7 +35,7 @@ const About = () => {
                         height={733}
                     />
                 </div>
-                <div className="bg-[#e6ded8] w-full lg:w-[50%] mx-auto flex flex-col md:p-8 py-7 px-7 lg:p-20 items-start justify-center h-[350px] lg:h-auto md:h-[40vh]">
+                <div className="bg-[#e6ded8] w-full lg:w-[50%] mx-auto flex flex-col md:p-8 py-7 px-7 lg:p-20 items-start justify-center h-[320px] lg:h-auto md:h-[40vh]">
                     <span className="font-normal font-inter text-xs">
                         OUR FACTORIES
                     </span>
@@ -54,7 +54,7 @@ const About = () => {
                 </div>
             </section>
             <section className=" w-full h-fit flex flex-col-reverse md:flex-row lg:flex-row">
-                <div className="bg-[#e6ded8] w-full lg:w-[50%] mx-auto flex flex-col md:p-8 py-7 px-7 lg:p-20 items-start justify-center h-[350px] lg:h-auto md:h-[40vh]">
+                <div className="bg-[#e6ded8] w-full lg:w-[50%] mx-auto flex flex-col md:p-8 py-7 px-7 lg:p-20 items-start justify-center h-[320px] lg:h-auto md:h-[40vh]">
                     <span className="font-normal font-inter text-xs">
                         OUR QUALITY
                     </span>
@@ -88,7 +88,7 @@ const About = () => {
                         height={733}
                     />
                 </div>
-                <div className="w-full lg:w-[50%] mx-auto flex flex-col md:p-8 py-7 px-7 lg:p-20 items-start justify-center h-[350px] lg:h-auto md:h-[40vh]">
+                <div className="w-full lg:w-[50%] mx-auto flex flex-col md:p-8 py-7 px-7 lg:p-20 items-start justify-center h-[320px] lg:h-auto md:h-[40vh]">
                     <span className="font-normal font-inter text-xs">
                         OUR PRICES
                     </span>
