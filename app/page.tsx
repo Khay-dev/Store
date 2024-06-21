@@ -3,8 +3,22 @@ import Footer from "../components/ui/Footer";
 import Image from "next/image";
 import Link from "next/link";
 
-const Products = () => {
-    const products = [
+interface Category {
+    productName: string;
+    productImage: string;
+    index: string;
+}
+
+interface Products {
+    productName: string;
+    productImage: string;
+    productType: string;
+    price: string;
+    index: string;
+}
+
+const Products:React.FC = () => {
+    const products: Products[] = [
         {
             productName: "The Waffle Long-Sleeve Crew",
             productImage: "/assets/fav1.png",
@@ -80,8 +94,8 @@ const Products = () => {
     );
 };
 
-export default function Home() {
-    const catergories = [
+export default function Home(): JSX.Element {
+    const catergories: Category[] = [
         {
             productName: "Shirts",
             productImage: "/assets/shirt.png",

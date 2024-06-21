@@ -136,7 +136,7 @@ const Navbar = () => {
                                 <Link href={""}>Women</Link>
                             </li>
                             <li className="hover:underline text-text tracking-wide h-full font-medium text-sm flex items-center transition ease-in">
-                                <Link href={""}>Men</Link>
+                                <Link href="/men">Men</Link>
                             </li>
                             <li className="hover:underline text-text tracking-wide h-full font-medium text-sm flex items-center transition ease-in">
                                 <Link href={"/about"}>About</Link>
@@ -155,7 +155,7 @@ const Navbar = () => {
                         <Link href={""}>Women</Link>
                     </li>
                     <li className=" font-normal text-xs flex items-center  border-b-2 border-transparent hover:border-b-2 hover:border-black h-full transition ease-in text-text tracking-wide">
-                        <Link href={""}>Men</Link>
+                        <Link href="/men">Men</Link>
                     </li>
                     <li className="font-normal text-xs flex items-center border-b-2 border-transparent hover:border-b-2 hover:border-black h-full transition ease-in  text-text tracking-wide">
                         <Link href="/about">About</Link>

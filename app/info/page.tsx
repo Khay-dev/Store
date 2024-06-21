@@ -1,8 +1,15 @@
 import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/Footer";
 
+interface Blog {
+    blogImage: string;
+    blogTitle: string;
+    Blogkeyword: string;
+    index: string;
+}
+
 const Stories = () => {
-    const Blogs = [
+    const Blogs: Blog[] = [
         {
             blogImage: "/assets/blog1.png",
             blogTitle: "How To Style Winter Whites",
@@ -67,8 +74,8 @@ const Stories = () => {
                     The Latest
                 </h1>
                 <div className="grid lg:grid-cols-3 justify-center lg:justify-between gap-x-5 gap-y-10 lg:gap-y-20 mt-5">
-                    {Blogs.map((blog, index) => (
-                        <div key={index}>
+                    {Blogs.map((blog: Blog) => (
+                        <div key={blog.index}>
                             <img
                                 src={blog.blogImage}
                                 alt="image"
