@@ -1,6 +1,7 @@
 import Image from "next/image";
-import Navbar from "@/components/ui/Navbar";
-import Footer from "@/components/ui/Footer";
+import Navbar from "../../components/ui/Navbar";
+import Footer from "../../components/ui/Footer";
+import React from "react";
 const About = () => {
     return (
         <main className="overflow-x-hidden scroll-smooth">

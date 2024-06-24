@@ -8,6 +8,7 @@ import { IoCartOutline } from "react-icons/io5";
 import { CiMenuBurger } from "react-icons/ci";
 import { IoIosClose } from "react-icons/io";
 import { useState } from "react";
+import React from "react";
 
 const Header = () => {
     return (

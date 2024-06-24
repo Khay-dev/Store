@@ -1,5 +1,6 @@
-import Navbar from "@/components/ui/Navbar";
-import Footer from "@/components/ui/Footer";
+import Navbar from "../../components/ui/Navbar";
+import Footer from "../../components/ui/Footer";
+import React from "react";
 
 interface Blog {
     blogImage: string;
