@@ -6,7 +6,7 @@ const About = () => {
     return (
         <main className="overflow-x-hidden scroll-smooth">
             <Navbar />
-            <section className="h-[80vh] bg-bottom bg-cover bg-about bg-no-repeat w-full lg:h-screen ">
+            <section className="h-[80vh] bg-bottom bg-cover bg-[url('/assets/about.png')] bg-no-repeat w-full lg:h-screen ">
                 <div className="flex flex-col gap-y-5 items-center justify-center h-full text-center">
                     <h3 className="font-normal text-4xl  lg:text-7xl font-Inter text-center text-white lg:leading-[1.12] md:leading-[1.25] lg:w-[30%] md:w-[50%]">
                         We believe we can all make a difference.
@@ -79,7 +79,7 @@ const About = () => {
                     />
                 </div>
             </section>
-            <section className=" bg-sectionbg bg-center bg-cover bg-no-repeat h-[400px] lg:h-[70vh] w-full" />
+            <section className=" bg-[/assets/randab.png] bg-center bg-cover bg-no-repeat h-[400px] lg:h-[70vh] w-full" />
             <section className=" w-full h-fit flex flex-col-reverse md:flex-row lg:flex-row">
                 <div className="w-full lg:w-2/4 mx-auto lg:h-auto md:h-[40vh]">
                     <Image

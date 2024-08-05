@@ -5,7 +5,7 @@ import React from "react";
 const Footer = () => {
     return (
         <>
-            <footer className="bg-background text-text  flex flex-col">
+            <footer className="bg-[#DDDBDC] text-[#262626]  flex flex-col">
                 <div className="flex flex-col-reverse md:flex-row items-start justify-between w-full lg:p-11 px-7 py-10 gap-y-8  md:gap-y-0">
                     <div className="flex flex-col flex-wrap md:flex-row gap-y-7 w-full md:w-[60%] items-start lg:flex-nowrap">
                         <div className="flex flex-col gap-y-3 items-start w-[195px]">

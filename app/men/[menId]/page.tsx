@@ -111,22 +111,22 @@ const ProductDetailMainbar = () => {
                         Size
                     </p>
                     <div className="flex mt-3 gap-x-3">
-                        <button className="bg-footer p-3 h-[40px] w-[45px] flex items-center justify-center text-primary font-inter font-normal text-xs">
+                        <button className="bg-footer p-3 h-[40px] w-[45px] flex items-center justify-center text-primary font-inter font-normal text-xs hover:bg-text hover:text-white">
                             XS
                         </button>
-                        <button className="bg-footer p-3 h-[40px] w-[45px] flex items-center justify-center text-primary font-inter font-normal text-xs">
+                        <button className="bg-footer p-3 h-[40px] w-[45px] flex items-center justify-center text-primary font-inter font-normal text-xs hover:bg-text hover:text-white">
                             S
                         </button>
-                        <button className="bg-footer p-3 h-[40px] w-[45px] flex items-center justify-center text-primary font-inter font-normal text-xs">
+                        <button className="bg-footer p-3 h-[40px] w-[45px] flex items-center justify-center text-primary font-inter font-normal text-xs hover:bg-text hover:text-white">
                             M
                         </button>
-                        <button className="bg-footer p-3 h-[40px] w-[45px] flex items-center justify-center text-primary font-inter font-normal text-xs">
+                        <button className="bg-footer p-3 h-[40px] w-[45px] flex items-center justify-center text-primary font-inter font-normal text-xs hover:bg-text hover:text-white">
                             L
                         </button>
-                        <button className="bg-footer p-3 h-[40px] w-[45px] flex items-center justify-center text-primary font-inter font-normal text-xs">
+                        <button className="bg-footer p-3 h-[40px] w-[45px] flex items-center justify-center text-primary font-inter font-normal text-xs hover:bg-text hover:text-white">
                             XL
                         </button>
-                        <button className="bg-footer p-3 h-[40px] w-[45px] flex items-center justify-center text-primary font-inter font-normal text-xs">
+                        <button className="bg-footer p-3 h-[40px] w-[45px] flex items-center justify-center text-primary font-inter font-normal text-xs hover:bg-text hover:text-white">
                             XXL
                         </button>
                     </div>

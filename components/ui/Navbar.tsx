@@ -48,33 +48,33 @@ const Header = () => {
 
 const Submenu = () => {
     return (
-        <div className="lg:flex items-center justify-center gap-4 h-[9vh] border-b border-[#DDDBDC] px-12 bg-background hidden w-full ">
+        <div className="lg:flex items-center justify-center gap-4 h-[9vh] border-b border-[#DDDBDC] px-12 bg-[#DDDBDC] hidden w-full">
             <ul className="flex items-center gap-x-4 h-[9vh]">
-                <li className="font-normal text-xs flex items-center  border-b-2 border-transparent hover:border-b-2 hover:border-black h-full transition ease-in text-text  tracking-wide">
+                <li className="font-normal text-xs flex items-center  border-b-2 border-transparent hover:border-b-2 hover:border-black h-full transition ease-in text-[#262626]  tracking-wide">
                     <Link href={""}>Holiday Gifting</Link>
                 </li>
-                <li className="font-normal text-xs flex items-center  border-b-2 border-transparent hover:border-b-2 hover:border-black h-full transition ease-in text-text tracking-wide ">
+                <li className="font-normal text-xs flex items-center  border-b-2 border-transparent hover:border-b-2 hover:border-black h-full transition ease-in text-[#262626] tracking-wide ">
                     <Link href={""}>New Arrivals</Link>
                 </li>{" "}
-                <li className="font-normal text-xs flex items-center  border-b-2 border-transparent hover:border-b-2 hover:border-black h-full transition ease-in text-text  tracking-wide">
+                <li className="font-normal text-xs flex items-center  border-b-2 border-transparent hover:border-b-2 hover:border-black h-full transition ease-in text-[#262626]  tracking-wide">
                     <Link href={""}>Best Sellers </Link>
                 </li>{" "}
-                <li className="font-normal text-xs flex items-center  border-b-2 border-transparent hover:border-b-2 hover:border-black h-full transition ease-in text-text tracking-wide ">
+                <li className="font-normal text-xs flex items-center  border-b-2 border-transparent hover:border-b-2 hover:border-black h-full transition ease-in text-[#262626] tracking-wide ">
                     <Link href={""}>Clothing</Link>
                 </li>{" "}
-                <li className="font-normal text-xs flex items-center  border-b-2 border-transparent hover:border-b-2 hover:border-black h-full transition ease-in text-text ">
+                <li className="font-normal text-xs flex items-center  border-b-2 border-transparent hover:border-b-2 hover:border-black h-full transition ease-in text-[#262626] ">
                     <Link href={""}>Top & Sweaters</Link>
                 </li>{" "}
-                <li className="font-normal text-xs flex items-center  border-b-2 border-transparent hover:border-b-2 hover:border-black h-full transition ease-in text-text tracking-wide ">
+                <li className="font-normal text-xs flex items-center  border-b-2 border-transparent hover:border-b-2 hover:border-black h-full transition ease-in text-[#262626] tracking-wide ">
                     <Link href={""}>Pant & Jeans</Link>
                 </li>{" "}
-                <li className="font-normal text-xs flex items-center  border-b-2 border-transparent hover:border-b-2 hover:border-black h-full transition ease-in text-text tracking-wide ">
+                <li className="font-normal text-xs flex items-center  border-b-2 border-transparent hover:border-b-2 hover:border-black h-full transition ease-in text-[#262626] tracking-wide ">
                     <Link href={""}>Outer Wears</Link>
                 </li>{" "}
-                <li className="font-normal text-xs flex items-center  border-b-2 border-transparent hover:border-b-2 hover:border-black h-full transition ease-in text-text  tracking-wide">
+                <li className="font-normal text-xs flex items-center  border-b-2 border-transparent hover:border-b-2 hover:border-black h-full transition ease-in text-[#262626]  tracking-wide">
                     <Link href={""}>Shoes & Bags</Link>
                 </li>{" "}
-                <li className="font-normal text-xs flex items-center  border-b-2 border-transparent hover:border-b-2 hover:border-black h-full transition ease-in text-text tracking-wide ">
+                <li className="font-normal text-xs flex items-center  border-b-2 border-transparent hover:border-b-2 hover:border-black h-full transition ease-in text-[#262626] tracking-wide ">
                     <Link href={""}>Sales</Link>
                 </li>
             </ul>
@@ -95,15 +95,15 @@ const Navbar = () => {
         <section className="w-screen font-inter">
             <Header />
 
-            <div className="flex items-center justify-between gap-4 h-[9vh] border-b border-[#DDDBDC] px-3 bg-background lg:hidden">
+            <div className="flex items-center justify-between gap-4 h-[9vh] border-b border-[#DDDBDC] px-3 bg-[#DDDBDC] lg:hidden">
                 <button type="button" onClick={ShowNav}>
-                    <CiMenuBurger className="text-text text-xl" />
+                    <CiMenuBurger className="text-[#262626] text-xl" />
                 </button>
 
                 <div className="ml-[9vw]">
                     <Link
                         href={"/"}
-                        className=" font-bold font-inter text-sm tracking-widest text-text "
+                        className=" font-bold font-inter text-sm tracking-widest text-[#262626] "
                     >
                         K H A Y - C A R T
                     </Link>
@@ -111,13 +111,13 @@ const Navbar = () => {
 
                 <div className="flex items-center gap-x-2">
                     <button type="button">
-                        <IoSearchSharp className="text-text text-xl" />
+                        <IoSearchSharp className="text-[#262626] text-xl" />
                     </button>
                     <button type="button">
-                        <LuUser2 className="text-text text-xl" />
+                        <LuUser2 className="text-[#262626] text-xl" />
                     </button>
                     <button type="button">
-                        <IoCartOutline className="text-text text-xl" />
+                        <IoCartOutline className="text-[#262626] text-xl" />
                     </button>
                 </div>
             </div>
@@ -130,19 +130,19 @@ const Navbar = () => {
                             onClick={CloseNav}
                             className="pt-5"
                         >
-                            <IoIosClose className="text-text text-3xl" />
+                            <IoIosClose className="text-[#262626] text-3xl" />
                         </button>
                         <ul className="flex flex-col gap-y-5">
-                            <li className="hover:underline text-text tracking-wide h-full font-medium text-sm flex items-center transition ease-in">
+                            <li className="hover:underline text-[#262626] tracking-wide h-full font-medium text-sm flex items-center transition ease-in">
                                 <Link href={""}>Women</Link>
                             </li>
-                            <li className="hover:underline text-text tracking-wide h-full font-medium text-sm flex items-center transition ease-in">
+                            <li className="hover:underline text-[#262626] tracking-wide h-full font-medium text-sm flex items-center transition ease-in">
                                 <Link href="/men">Men</Link>
                             </li>
-                            <li className="hover:underline text-text tracking-wide h-full font-medium text-sm flex items-center transition ease-in">
+                            <li className="hover:underline text-[#262626] tracking-wide h-full font-medium text-sm flex items-center transition ease-in">
                                 <Link href={"/about"}>About</Link>
                             </li>
-                            <li className="hover:underline text-text tracking-wide h-full font-medium text-sm flex items-center transition ease-in">
+                            <li className="hover:underline text-[#262626] tracking-wide h-full font-medium text-sm flex items-center transition ease-in">
                                 <Link href="/info">Everworld Stories</Link>
                             </li>
                         </ul>
@@ -152,16 +152,16 @@ const Navbar = () => {
 
             <div className="items-center justify-between gap-4 h-[9vh] border-b border-[#DDDBDC] px-12 bg-white hidden lg:flex w-full">
                 <ul className="flex items-center gap-x-4 h-[9vh]">
-                    <li className="font-normal text-xs flex items-center  border-b-2 border-transparent hover:border-b-2 hover:border-black h-full transition ease-in text-text tracking-wide">
+                    <li className="font-normal text-xs flex items-center  border-b-2 border-transparent hover:border-b-2 hover:border-black h-full transition ease-in text-[#262626] tracking-wide">
                         <Link href={""}>Women</Link>
                     </li>
-                    <li className=" font-normal text-xs flex items-center  border-b-2 border-transparent hover:border-b-2 hover:border-black h-full transition ease-in text-text tracking-wide">
+                    <li className=" font-normal text-xs flex items-center  border-b-2 border-transparent hover:border-b-2 hover:border-black h-full transition ease-in text-[#262626] tracking-wide">
                         <Link href="/men">Men</Link>
                     </li>
-                    <li className="font-normal text-xs flex items-center border-b-2 border-transparent hover:border-b-2 hover:border-black h-full transition ease-in  text-text tracking-wide">
+                    <li className="font-normal text-xs flex items-center border-b-2 border-transparent hover:border-b-2 hover:border-black h-full transition ease-in  text-[#262626] tracking-wide">
                         <Link href="/about">About</Link>
                     </li>
-                    <li className="font-normal text-xs flex items-center border-b-2 border-transparent hover:border-b-2 hover:border-black h-full transition ease-in text-text tracking-wide">
+                    <li className="font-normal text-xs flex items-center border-b-2 border-transparent hover:border-b-2 hover:border-black h-full transition ease-in text-[#262626] tracking-wide">
                         <Link href="/info">Everworld Stories</Link>
                     </li>
                 </ul>
@@ -169,7 +169,7 @@ const Navbar = () => {
                 <div className="ml-[-16vw]">
                     <Link
                         href="/"
-                        className=" font-bold font-inter text-sm -tracking-widest text-text "
+                        className=" font-bold font-inter text-sm -tracking-widest text-[#262626] "
                     >
                         K H A Y - C A R T
                     </Link>

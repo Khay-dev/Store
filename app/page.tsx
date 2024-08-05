@@ -2,7 +2,7 @@ import Navbar from "../components/ui/Navbar";
 import Footer from "../components/ui/Footer";
 import Image from "next/image";
 import Link from "next/link";
-
+import React from "react";
 interface Category {
     productName: string;
     productImage: string;
@@ -17,7 +17,7 @@ interface Products {
     index: string;
 }
 
-const Products:React.FC = () => {
+const Products: React.FC = () => {
     const products: Products[] = [
         {
             productName: "The Waffle Long-Sleeve Crew",
@@ -84,7 +84,7 @@ const Products:React.FC = () => {
                                 {product.productType}
                             </p>
                         </div>
-                        <p className="text-xs font-normal text-text">
+                        <p className="text-xs font-normal text-[#262626]">
                             {product.price}
                         </p>
                     </div>
@@ -135,7 +135,7 @@ export default function Home(): JSX.Element {
     return (
         <main className="overflow-x-hidden scroll-smooth">
             <Navbar />
-            <section className="h-[80vh] bg-top bg-cover bg-hero bg-no-repeat w-full lg:h-screen">
+            <section className="h-[80vh] bg-top bg-cover bg-[url('/assets/home.png')] bg-no-repeat w-full lg:h-screen">
                 <div className="flex flex-col gap-y-3.5 w-full top-[50%] items-center gap-3 text-white absolute md:top-[40%] lg:top-[55%] lg:left-[4%]  z-20 lg:w-[40%] ">
                     <h3 className="font-normal text-3xl md:text-4xl lg:text-5xl font-Inter">
                         Your Cozy Era
@@ -145,7 +145,7 @@ export default function Home(): JSX.Element {
                     </p>
                     <button
                         type="button"
-                        className="uppercase w-[40%] font-normal text-sm text-text bg-white py-2 md:py-3"
+                        className="uppercase w-[40%] font-normal text-sm text-[#262626] bg-white py-2 md:py-3"
                     >
                         shop now
                     </button>
@@ -179,34 +179,34 @@ export default function Home(): JSX.Element {
             </section>
             <section className=" lg:px-10 px-7 lg:py-14  pb-14 pt-5">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 place-items-center">
-                    <div className=" bg-new bg-center bg-cover bg-no-repeat h-[500px] w-full flex flex-col gap-y-3.5 items-center justify-center">
+                    <div className=" bg-[url('/assets/new.png')] bg-center bg-cover bg-no-repeat h-[500px] w-full flex flex-col gap-y-3.5 items-center justify-center">
                         <h1 className="font-normal text-2xl text-white">
                             New Arrivals
                         </h1>
-                        <button className="uppercase w-[60%] font-normal text-sm text-text bg-white py-2 md:py-3">
+                        <button className="uppercase w-[60%] font-normal text-sm text-[#262626] bg-white py-2 md:py-3">
                             Shop the latest .
                         </button>
                     </div>
-                    <div className=" bg-best bg-center bg-cover bg-no-repeat h-[500px] w-full flex flex-col gap-y-3.5 items-center justify-center">
+                    <div className=" bg-[url('/assets/best.png')] bg-center bg-cover bg-no-repeat h-[500px] w-full flex flex-col gap-y-3.5 items-center justify-center">
                         <h1 className="font-normal text-2xl text-white">
                             Best Sellers
                         </h1>
-                        <button className="uppercase w-[60%] font-normal text-sm text-text bg-white py-2 md:py-3">
+                        <button className="uppercase w-[60%] font-normal text-sm text-[#262626] bg-white py-2 md:py-3">
                             Shop the favourite.
                         </button>
                     </div>
-                    <div className=" bg-holiday bg-center bg-cover bg-no-repeat h-[500px] w-full flex flex-col gap-y-3.5 items-center justify-center">
+                    <div className=" bg-[url('/assets/holiday.png')] bg-center bg-cover bg-no-repeat h-[500px] w-full flex flex-col gap-y-3.5 items-center justify-center">
                         {" "}
                         <h1 className="font-normal text-2xl text-white">
                             The Holiday Outfit
                         </h1>
-                        <button className="uppercase w-[60%]  font-normal text-sm text-text bg-white py-2 md:py-3">
+                        <button className="uppercase w-[60%]  font-normal text-sm text-[#262626] bg-white py-2 md:py-3">
                             Shop the occasion
                         </button>
                     </div>
                 </div>
             </section>
-            <section className="  relative flex flex-col justify-center items-center text-center h-auto lg:h-[40vh] px-5 py-9 bg-section bg-center bg-cover bg-no-repeat">
+            <section className="  relative flex flex-col justify-center items-center text-center h-auto lg:h-[40vh] px-5 py-9 bg-[url('/assets/bgsec.png] bg-center bg-cover bg-no-repeat">
                 <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50" />
                 <div className="relative z-10">
                     <h2 className="text-white text-2xl lg:text-3xl font-normal font-inter">
@@ -216,7 +216,7 @@ export default function Home(): JSX.Element {
                         Read about our progress in our latest Impact Report.
                     </p>
                     <Link href="">
-                        <button className="font-inter mx-auto mt-3 font-normal text-sm text-text bg-white py-2 w-[40%] uppercase       md:py-3">
+                        <button className="font-inter mx-auto mt-3 font-normal text-sm text-[#262626] bg-white py-2 w-[40%] uppercase       md:py-3">
                             learn more
                         </button>
                     </Link>
@@ -224,10 +224,10 @@ export default function Home(): JSX.Element {
             </section>
             <section className=" lg:px-10 px-7 py-14">
                 <div className="text-center flex flex-col items-center gap-y-4 font-inter">
-                    <h1 className="font-normal lg:mb-2 text-text text-2xl">
+                    <h1 className="font-normal lg:mb-2 text-[#262626] text-2xl">
                         Khay-Kart Favourite
                     </h1>
-                    <p className=" font-normal text-sm  text-text lg:text-base">
+                    <p className=" font-normal text-sm  text-[#262626] lg:text-base">
                         Beautifully Functional. Purposefully Designed.
                         Consciously Crafted.
                     </p>
@@ -319,10 +319,10 @@ export default function Home(): JSX.Element {
             </section>
             <section className=" lg:px-10 px-7 py-14">
                 <div className="text-center flex flex-col items-center gap-y-3 font-inter">
-                    <h1 className="font-normal mb-3 text-text text-2xl">
+                    <h1 className="font-normal mb-3 text-[#262626] text-2xl">
                         Why Choose Khay-Kart
                     </h1>
-                    <p className=" font-normal text-sm  text-text lg:text-base">
+                    <p className=" font-normal text-sm  text-[#262626] lg:text-base">
                         We are a one-stop platform for all your fashion needs,
                         hassle-free. Buy with a peace of mind.
                     </p>
